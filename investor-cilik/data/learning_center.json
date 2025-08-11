@@ -1,0 +1,90 @@
+{
+  "lessons": [
+    {
+      "id": "what-is-a-stock",
+      "title": "Apa itu Saham? Sepotong Kue Pai! 🥧",
+      "image": "assets/images/lesson-pie-chart.png",
+      "content": [
+        "Bayangkan sebuah kue pai yang besar dan lezat. Kue pai itu adalah sebuah perusahaan (seperti perusahaan mainan atau perusahaan video game).",
+        "'Saham' itu seperti mendapatkan sepotong kecil dari kue pai tersebut. Saat kamu memiliki saham, kamu memiliki sebagian kecil dari perusahaan itu! Ini membuatmu menjadi 'pemegang saham'."
+      ],
+      "interactive_example": {
+        "title": "Ayo Berandai-andai!",
+        "scenario": "Bayangkan kita memulai kedai limun. Kita butuh $10 untuk membeli lemon dan gula. Kita bisa menjual 10 'lembar saham' seharga $1 per lembar. Jika kamu membeli satu lembar, kamu memiliki 1/10 dari kedai limun kita! Jika kedai kita menghasilkan uang, nilai sahammu akan menjadi lebih berharga."
+      },
+      "external_links": [
+        {
+          "name": "Keuangan Anak - Apa itu Saham?",
+          "url": "https://kids.kiddle.co/Stock"
+        }
+      ]
+    },
+    {
+      "id": "why-companies-sell-stocks",
+      "title": "Mengapa Menjual Potongan Kue Pai?",
+      "image": "assets/images/lesson-growth.png",
+      "content": [
+        "Perusahaan menjual saham untuk mengumpulkan dana. Mereka bisa menggunakan uang ini untuk melakukan hal-hal keren, seperti menciptakan produk baru, membangun pabrik yang lebih besar, atau mempekerjakan lebih banyak orang.",
+        "Ini seperti saat kita menjual saham di kedai limun kita untuk mendapatkan uang membeli lemon. Perusahaan mendapatkan uang yang dibutuhkan untuk berkembang, dan kamu bisa memiliki sebagian darinya!"
+      ],
+      "interactive_example": {
+        "title": "Tujuan Perusahaan Game",
+        "scenario": "Sebuah perusahaan game ingin membuat video game baru, tetapi mereka butuh $1.000.000. Mereka bisa menjual 100.000 lembar saham seharga $10 per lembar untuk mengumpulkan uang tersebut. Sekarang mereka bisa membuat game baru mereka yang luar biasa!"
+      },
+      "external_links": [
+        {
+          "name": "Investopedia - Mengapa Perusahaan Menerbitkan Saham",
+          "url": "https://www.investopedia.com/terms/s/stockmarket.asp#:~:text=Companies%20issue%20shares%20on%20the,shares%20at%20a%20higher%20price."
+        }
+      ]
+    },
+    {
+      "id": "how-prices-change",
+      "title": "Rollercoaster Harga 🎢",
+      "image": "assets/images/lesson-rollercoaster.png",
+      "content": [
+        "Harga saham bisa naik dan turun. Ini disebut 'volatilitas'.",
+        "Jika banyak orang ingin membeli saham (permintaan tinggi), harganya naik. Jika banyak orang ingin menjualnya (permintaan rendah), harganya turun.",
+        "Kabar baik tentang perusahaan (seperti rekor penjualan) biasanya membuat harga naik. Kabar buruk (seperti produk yang gagal) bisa membuatnya turun."
+      ],
+      "interactive_example": {
+        "title": "Kilas Berita!",
+        "scenario": "Di dalam game, kamu melihat sebuah berita: 'RoboCorp Inc. baru saja merilis robot super cepat baru!'. Menurutmu apa yang akan terjadi pada harga saham mereka? Kemungkinan akan naik karena orang-orang antusias dengan robot baru itu!"
+      },
+      "external_links": []
+    },
+    {
+      "id": "what-is-a-portfolio",
+      "title": "Peti Hartamu yang Berisi Saham 💎",
+      "image": "assets/images/lesson-treasure-chest.png",
+      "content": [
+        "Portofolio hanyalah kumpulan dari semua saham berbeda yang kamu miliki. Anggap saja seperti peti harta karun atau buku stiker.",
+        "Bukan koin emas atau stiker, portofoliomu berisi semua lembar saham dari berbagai perusahaan yang berbeda."
+      ],
+      "interactive_example": {
+        "title": "Bangun Portofoliomu",
+        "scenario": "Katakanlah kamu punya 5 lembar saham 'GameFun' dan 10 lembar saham 'CandyCorp'. Portofoliomu berisi kedua investasi ini. Di dalam game, dasbormu menunjukkan portofoliomu."
+      },
+      "external_links": []
+    },
+    {
+      "id": "diversification",
+      "title": "Jangan Taruh Semua Telur dalam Satu Keranjang! 🥚",
+      "image": "assets/images/lesson-eggs-basket.png",
+      "content": [
+        "'Diversifikasi' adalah kata keren untuk tidak menaruh semua uangmu hanya pada satu saham. Lebih pintar membeli sedikit saham dari banyak perusahaan berbeda dari berbagai industri (seperti teknologi, makanan, dan mobil).",
+        "Kenapa? Jika satu perusahaan kinerjanya buruk, kamu tidak akan kehilangan semua uangmu karena saham-sahammu yang lain mungkin sedang berkinerja baik! Ini menurunkan risikomu."
+      ],
+      "interactive_example": {
+        "title": "Investasi Cerdas",
+        "scenario": "Kamu punya $100. Apakah lebih pintar menaruh semua $100 pada satu saham video game, atau menaruh $25 di saham game, $25 di perusahaan makanan, $25 di perusahaan mobil, dan $25 di perusahaan mainan? Pilihan kedua adalah diversifikasi dan lebih aman!"
+      },
+      "external_links": [
+        {
+          "name": "Nasihat Warren Buffett untuk Anak",
+          "url": "https://youtu.be/ffOprG9kwV0?si=IuhePXfUIuzA_B-D"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+[
+    {
+        "day": 1,
+        "news": {
+            "headline": "Pasar Dibuka dengan Aktivitas Sedang",
+            "prediction": "Sektor teknologi diperkirakan akan memimpin kenaikan besok."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 0.50 }, 
+            { "target": "HEALTH", "change": -0.20 }, 
+            { "target": "ENERGY", "change": 0.80 },
+            { "target": "FIN", "change": 0.30 }, 
+            { "target": "RETAIL", "change": -0.10 }, 
+            { "target": "AUTO", "change": 0.40 }
+        ]
+    },
+    {
+        "day": 2,
+        "news": {
+            "headline": "Innovate Corp (INVT) Melaporkan Penjualan Gawai yang Kuat",
+            "prediction": "Volatilitas sektor kesehatan diperkirakan terjadi besok seiring keputusan obat Vitality."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 4.20 }, 
+            { "target": "HEALTH", "change": -0.80 }, 
+            { "target": "ENERGY", "change": 0.30 },
+            { "target": "FIN", "change": 0.70 }, 
+            { "target": "RETAIL", "change": 0.50 }, 
+            { "target": "AUTO", "change": -0.60 }
+        ]
+    },
+    {
+        "day": 3,
+        "news": {
+            "headline": "Obat Vitality Inc (VITA) Disetujui oleh Regulator",
+            "prediction": "Sektor otomotif mungkin menghadapi tantangan besok karena kekhawatiran tentang baterai."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -0.40 }, 
+            { "target": "HEALTH", "change": 7.50 }, 
+            { "target": "ENERGY", "change": -0.90 },
+            { "target": "FIN", "change": 0.20 }, 
+            { "target": "RETAIL", "change": -1.00 }, 
+            { "target": "AUTO", "change": 0.30 }
+        ]
+    },
+    {
+        "day": 4,
+        "news": {
+            "headline": "Masalah Baterai AutoMakers (AUTO) Menunda Peluncuran Mobil Listrik",
+            "prediction": "Sektor keuangan mungkin menguat besok karena komentar dari bank sentral."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 0.90 }, 
+            { "target": "HEALTH", "change": 1.20 }, 
+            { "target": "ENERGY", "change": -3.60 },
+            { "target": "FIN", "change": -0.40 }, 
+            { "target": "RETAIL", "change": 0.60 }, 
+            { "target": "AUTO", "change": -5.80 }
+        ]
+    },
+    {
+        "day": 5,
+        "news": {
+            "headline": "Bank Sentral Memberi Sinyal Stabilitas Suku Bunga",
+            "prediction": "Sektor ritel mungkin akan memberi kejutan besok dengan berita ekspansi."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 1.30 }, 
+            { "target": "HEALTH", "change": 0.40 }, 
+            { "target": "ENERGY", "change": 0.70 },
+            { "target": "FIN", "change": 6.40 }, 
+            { "target": "RETAIL", "change": 1.90 }, 
+            { "target": "AUTO", "change": -1.20 }
+        ]
+    },
+    {
+        "day": 6,
+        "news": {
+            "headline": "MegaMart (MMRT) Mengumumkan 100 Toko Baru",
+            "prediction": "Sektor teknologi mungkin pulih besok setelah masalah keamanan diatasi."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -0.80 }, 
+            { "target": "HEALTH", "change": 0.60 }, 
+            { "target": "ENERGY", "change": 1.10 },
+            { "target": "FIN", "change": 3.80 }, 
+            { "target": "RETAIL", "change": 8.20 }, 
+            { "target": "AUTO", "change": -0.40 }
+        ]
+    },
+    {
+        "day": 7,
+        "news": {
+            "headline": "Innovate Corp (INVT) Memperbaiki Celah Keamanan Kritis",
+            "prediction": "Sektor energi mungkin melonjak besok karena pengumuman kebijakan."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 5.60 }, 
+            { "target": "HEALTH", "change": -1.20 }, 
+            { "target": "ENERGY", "change": -0.30 },
+            { "target": "FIN", "change": 1.40 }, 
+            { "target": "RETAIL", "change": 0.90 }, 
+            { "target": "AUTO", "change": 0.70 }
+        ]
+    },
+    {
+        "day": 8,
+        "news": {
+            "headline": "Pemerintah Mengumumkan Subsidi Energi Hijau",
+            "prediction": "Sektor kesehatan mungkin mengalami volatilitas besok dengan adanya hasil uji coba."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 1.80 }, 
+            { "target": "HEALTH", "change": 0.40 }, 
+            { "target": "ENERGY", "change": 12.60 },
+            { "target": "FIN", "change": 0.90 }, 
+            { "target": "RETAIL", "change": 0.30 }, 
+            { "target": "AUTO", "change": 4.50 }
+        ]
+    },
+    {
+        "day": 9,
+        "news": {
+            "headline": "Uji Coba Krim Anti-Penuaan Vitality Inc (VITA) Menunjukkan Hasil Menjanjikan",
+            "prediction": "Sektor otomotif mungkin menguat besok dengan berita kemitraan."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 0.70 }, 
+            { "target": "HEALTH", "change": 15.40 }, 
+            { "target": "ENERGY", "change": -1.20 },
+            { "target": "FIN", "change": 0.80 }, 
+            { "target": "RETAIL", "change": 2.60 }, 
+            { "target": "AUTO", "change": -0.90 }
+        ]
+    },
+    {
+        "day": 10,
+        "news": {
+            "headline": "AutoMakers (AUTO) Bermitra dengan Innovate Corp (INVT) untuk Teknologi Otonom",
+            "prediction": "Sektor keuangan mungkin menghadapi tekanan besok di tengah kekhawatiran regulasi."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 7.20 }, 
+            { "target": "HEALTH", "change": -0.60 }, 
+            { "target": "ENERGY", "change": 1.50 },
+            { "target": "FIN", "change": 0.50 }, 
+            { "target": "RETAIL", "change": 1.10 }, 
+            { "target": "AUTO", "change": 10.30 }
+        ]
+    },
+    {
+        "day": 11,
+        "news": {
+            "headline": "Secure Bank (SBNK) Menghadapi Pengawasan Regulasi Terkait Aplikasinya",
+            "prediction": "Sektor teknologi mungkin menurun besok karena ketegangan perdagangan."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 1.40 }, 
+            { "target": "HEALTH", "change": 0.80 }, 
+            { "target": "ENERGY", "change": 0.90 },
+            { "target": "FIN", "change": -8.70 }, 
+            { "target": "RETAIL", "change": 1.30 }, 
+            { "target": "AUTO", "change": 0.50 }
+        ]
+    },
+    {
+        "day": 12,
+        "news": {
+            "headline": "Ketegangan Perdagangan Global Berdampak pada Rantai Pasokan Teknologi",
+            "prediction": "Sektor-sektor defensif mungkin berkinerja lebih baik besok di tengah ketidakpastian."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -9.10 }, 
+            { "target": "HEALTH", "change": 3.20 }, 
+            { "target": "ENERGY", "change": -4.30 },
+            { "target": "FIN", "change": -5.60 }, 
+            { "target": "RETAIL", "change": -6.80 }, 
+            { "target": "AUTO", "change": -8.20 }
+        ]
+    },
+    {
+        "day": 13,
+        "news": {
+            "headline": "Investor Beralih ke Aset Defensif",
+            "prediction": "Pasar mungkin akan berkonsolidasi besok setelah volatilitas baru-baru ini."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -2.10 }, 
+            { "target": "HEALTH", "change": 4.60 }, 
+            { "target": "ENERGY", "change": 1.80 },
+            { "target": "FIN", "change": 3.40 }, 
+            { "target": "RETAIL", "change": -1.20 }, 
+            { "target": "AUTO", "change": 2.50 }
+        ]
+    },
+    {
+        "day": 14,
+        "news": {
+            "headline": "Pasar Berkonsolidasi Setelah Sepekan yang Volatil",
+            "prediction": "Sektor energi mungkin pulih besok karena data inventaris."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 1.60 }, 
+            { "target": "HEALTH", "change": 2.30 }, 
+            { "target": "ENERGY", "change": -0.70 },
+            { "target": "FIN", "change": 0.90 }, 
+            { "target": "RETAIL", "change": -0.80 }, 
+            { "target": "AUTO", "change": 0.40 }
+        ]
+    },
+    {
+        "day": 15,
+        "news": {
+            "headline": "Stok Energi Turun Tajam",
+            "prediction": "Sektor ritel mungkin melonjak besok karena kejutan pendapatan."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 2.40 }, 
+            { "target": "HEALTH", "change": -0.30 }, 
+            { "target": "ENERGY", "change": 11.80 },
+            { "target": "FIN", "change": 1.20 }, 
+            { "target": "RETAIL", "change": 0.50 }, 
+            { "target": "AUTO", "change": 3.70 }
+        ]
+    },
+    {
+        "day": 16,
+        "news": {
+            "headline": "Pendapatan Kuartal ke-3 MegaMart (MMRT) Melebihi Ekspektasi",
+            "prediction": "Reli di seluruh pasar mungkin terjadi besok karena optimisme kebijakan."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 0.90 }, 
+            { "target": "HEALTH", "change": 1.50 }, 
+            { "target": "ENERGY", "change": -1.40 },
+            { "target": "FIN", "change": 2.70 }, 
+            { "target": "RETAIL", "change": 14.20 }, 
+            { "target": "AUTO", "change": -0.60 }
+        ]
+    },
+    {
+        "day": 17,
+        "news": {
+            "headline": "Optimisme Kebijakan Mendorong Reli Pasar yang Luas",
+            "prediction": "Rotasi sektor mungkin terjadi besok menjelang akhir kuartal."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 6.80 }, 
+            { "target": "HEALTH", "change": 4.20 }, 
+            { "target": "ENERGY", "change": 5.10 },
+            { "target": "FIN", "change": 7.40 }, 
+            { "target": "RETAIL", "change": 8.90 }, 
+            { "target": "AUTO", "change": 9.60 }
+        ]
+    },
+    {
+        "day": 18,
+        "news": {
+            "headline": "Penyeimbangan Ulang Portofolio di Akhir Kuartal Menyebabkan Volatilitas",
+            "prediction": "Hari perdagangan terakhir mungkin akan melihat pergerakan yang tidak terduga."
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 4.50 }, 
+            { "target": "HEALTH", "change": -2.80 }, 
+            { "target": "ENERGY", "change": 3.70 },
+            { "target": "FIN", "change": -1.90 }, 
+            { "target": "RETAIL", "change": 5.30 }, 
+            { "target": "AUTO", "change": -3.60 }
+        ]
+    },
+    {
+        "day": 19,
+        "news": {
+            "headline": "Hari Perdagangan Terakhir Terjadi Pergeseran Kebijakan Tak Terduga",
+            "prediction": "Selamat telah menyelesaikan simulasi!"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 8.20 }, 
+            { "target": "HEALTH", "change": 5.60 }, 
+            { "target": "ENERGY", "change": 6.90 },
+            { "target": "FIN", "change": 7.80 }, 
+            { "target": "RETAIL", "change": 9.40 }, 
+            { "target": "AUTO", "change": 11.70 }
+        ]
+    },
+    {
+        "day": 20,
+        "news": {
+            "headline": "Simulasi Selesai - Tinjau Portofoliomu!",
+            "prediction": ""
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 0.00 }, 
+            { "target": "HEALTH", "change": 0.00 }, 
+            { "target": "ENERGY", "change": 0.00 },
+            { "target": "FIN", "change": 0.00 }, 
+            { "target": "RETAIL", "change": 0.00 }, 
+            { "target": "AUTO", "change": 0.00 }
+        ]
+    }
+]
