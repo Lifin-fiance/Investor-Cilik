@@ -1,4 +1,3 @@
-
 /* Base Styles */
 body {
     font-family: 'Nunito', sans-serif;
@@ -530,5 +529,4 @@ body {
         opacity: 0.9;
         transform: scale(1.05);
     }
-
 }
