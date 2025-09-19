@@ -1,0 +1,390 @@
+/* Base Styles */
+body {
+    /* Menggunakan font Poppins yang lebih sesuai dengan body di index.html */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    background-image: url('../assets/images/background.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Layout */
+#game-header, #dashboard, #game-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Import Google Font: Baloo 2 (sudah ada di index, tapi kita pastikan lagi) */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* Typography */
+.game-title {
+    /* Mengganti font dan warna agar sesuai dengan branding LIFIN */
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800; /* Extra-bold */
+    font-size: 2.5rem;
+    text-align: center;
+    color: #04B3E3; /* Warna primer LIFIN */
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 24px; /* Rounded yang lebih besar seperti di index */
+    padding: 1.5rem;
+    box-shadow: 0 8px 15px -3px rgba(4, 179, 227, 0.15); /* Bayangan dengan hint warna primer */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Sedikit lebih besar */
+    font-family: 'Baloo 2', cursive; /* Menggunakan font judul */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #04B3E3; /* Border dengan warna primer */
+    color: #004B75; /* Warna biru tua */
+}
+
+.card-title .fas {
+    margin-right: 0.75rem;
+}
+
+/* Game Controls */
+#game-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 32px; /* Rounded penuh */
+    box-shadow: 0 6px 0 #038DB4; /* Shadow khas tombol LIFIN */
+    background-color: #FFD635; /* Warna aksen kuning */
+    margin-bottom: 1.5rem;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.day-counter {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Baloo 2', cursive;
+    color: #004B75; /* Biru tua agar kontras di atas kuning */
+}
+
+#difficulty {
+    border-radius: 16px;
+    border: 2px solid #004B75;
+    padding: 0.25rem 0.75rem;
+    font-family: 'Baloo 2';
+    font-weight: 600;
+}
+
+/* Portfolio */
+.portfolio-stats {
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-family: 'Baloo 2';
+}
+
+.total-wealth {
+    font-weight: bold;
+    font-size: 1.125rem;
+    border-top: 2px solid #04B3E3;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    color: #004B75;
+}
+
+.portfolio-stock-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 16px;
+    margin-bottom: 0.5rem;
+    background: #E8F7FB; /* Latar belakang biru muda */
+}
+
+/* Stock Market */
+#market-card {
+    flex-grow: 1;
+}
+
+#stock-market-list {
+    flex-grow: 1;
+}
+
+.stock-card {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 1rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.stock-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -5px rgba(4, 179, 227, 0.2);
+    border-color: #04B3E3;
+}
+
+.stock-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.stock-name {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #004B75;
+}
+
+.stock-ticker {
+    font-size: 0.875rem;
+    color: #04B3E3;
+    background: #E8F7FB;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.stock-price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.stock-price {
+    font-size: 1.75rem;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.stock-change {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Buttons */
+.game-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem; /* Ukuran font lebih besar */
+    font-family: 'Baloo 2', cursive; /* Menggunakan font Baloo */
+    font-weight: 700; /* Bold */
+    border-radius: 24px; /* Rounded yang konsisten */
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Menambahkan efek shadow dan transform seperti di index.html */
+.game-button:hover {
+    transform: translateY(-2px);
+}
+.game-button:active {
+    transform: translateY(2px);
+    box-shadow: none !important;
+}
+
+.next-day {
+    background: #04B3E3; /* Warna primer */
+    color: white;
+    box-shadow: 0 6px 0 #038DB4; /* Shadow khas LIFIN */
+}
+
+.next-day:active {
+    background: #038DB4;
+}
+
+.restart {
+    background: #FF6B6B; /* Warna merah aksen */
+    color: white;
+    box-shadow: 0 6px 0 #D44F4F; /* Shadow khas LIFIN */
+}
+
+.restart:active {
+    background: #D44F4F;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 75, 117, 0.6); /* Overlay dengan hint warna biru tua */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 24px; /* Rounded konsisten */
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 4px solid #FFD635; /* Border kuning sebagai aksen */
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #fde8e8;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FF6B6B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stock-modal-name {
+    /* Menggunakan font utama LIFIN */
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5rem;
+    color: #004B75;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+#stock-modal-desc {
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+    font-family: 'Baloo 2';
+    text-align: center;
+}
+
+.transaction-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#transaction-quantity {
+    width: 100px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Baloo 2', cursive;
+    border: 2px solid #04B3E3;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+#buy-btn {
+    background: #22c55e; /* Hijau untuk beli tetap ok */
+    color: white;
+    box-shadow: 0 6px 0 #16a34a;
+}
+
+#buy-btn:active {
+    background: #16a34a;
+}
+
+#sell-btn {
+    background: #FF6B6B; /* Merah untuk jual */
+    color: white;
+    box-shadow: 0 6px 0 #D44F4F;
+}
+
+#sell-btn:active {
+    background: #D44F4F;
+}
+
+/* Notifications */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Baloo 2', cursive;
+    z-index: 2000;
+    transition: all 0.5s;
+    border: 3px solid white;
+}
+
+.notification.success {
+    background: #22c55e; /* Hijau untuk sukses */
+}
+
+.notification.error {
+    background: #ef4444; /* Merah untuk error */
+}
+
+/* Utilities */
+.hidden {
+    display: none !important;
+}
+
+/* --- FINAL PASTI JADI - Hamburger Menu Styles --- */
+
+/* Gaya untuk Navigasi di dalam Menu */
+#mobile-menu nav {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Saat menu terbuka, geser navigasi ke dalam layar */
+body.menu-open #mobile-menu nav {
+  transform: translateX(0);
+}
+
+/* Animasi untuk tombol hamburger menjadi 'X' */
+body.menu-open #hamburger-btn span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+body.menu-open #hamburger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+body.menu-open #hamburger-btn span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* Sisa dari file CSS kamu bisa ditambahkan di sini jika ada */
+/* ... */

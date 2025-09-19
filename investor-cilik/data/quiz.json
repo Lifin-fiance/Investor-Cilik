@@ -1,0 +1,115 @@
+{
+  "quizTitle": "Tantangan Pengetahuan Investor Cilik!",
+  "questions": [
+    {
+      "question": "Jika perusahaan adalah sebuah pizza besar 🍕, apa itu 'saham'?",
+      "options": [
+        "Seluruh pizza",
+        "Sepotong kecil pizza",
+        "Kotak pizza",
+        "Kurir pengantar"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Saham itu seperti memiliki sepotong kecil perusahaan. Semakin banyak potongan yang kamu miliki, semakin banyak bagian perusahaan yang kamu punya."
+    },
+    {
+      "question": "Mengapa sebuah perusahaan menjual saham?",
+      "options": [
+        "Karena mereka punya terlalu banyak uang",
+        "Untuk memberikan produk gratis",
+        "Untuk mendapatkan uang agar bisa tumbuh lebih besar dan menciptakan hal baru",
+        "Untuk mengadakan pesta besar"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Perusahaan menjual saham untuk mengumpulkan uang bagi proyek-proyek menarik, seperti membangun pabrik baru atau menciptakan mainan baru yang keren."
+    },
+    {
+      "question": "Apa artinya 'diversifikasi'? 🤔",
+      "options": [
+        "Menaruh semua uangmu di perusahaan favoritmu",
+        "Menyembunyikan uangmu di bawah kasur",
+        "Hanya membeli saham di hari Selasa",
+        "Menyebarkan uangmu ke banyak saham yang berbeda"
+      ],
+      "correctAnswer": 3,
+      "feedback": "Ini adalah gagasan 'jangan menaruh semua telur dalam satu keranjang.' Melakukan diversifikasi adalah cara cerdas untuk mengurangi risikomu."
+    },
+    {
+      "question": "Sebuah berita melaporkan 'Jetpack baru RoboCorp sukses besar!'. Apa yang kemungkinan akan terjadi pada harga sahamnya? 📈",
+      "options": [
+        "Akan turun",
+        "Akan tetap sama",
+        "Akan naik",
+        "Akan menghilang"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Berita baik dan produk populer biasanya membuat lebih banyak orang ingin membeli saham, yang mendorong harganya naik."
+    },
+    {
+      "question": "Apa itu 'portofolio'?",
+      "options": [
+        "Jenis koper",
+        "Album foto yang mewah",
+        "Kumpulan dari semua saham berbeda yang kamu miliki",
+        "Nama sebuah perusahaan"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Portofoliomu adalah koleksi investasimu pribadi, seperti peti harta karun untuk semua sahammu."
+    },
+    {
+      "question": "Apa itu 'kode saham'?",
+      "options": [
+        "Kode rahasia untuk membuka game",
+        "Nama panggilan pendek untuk saham di pasar (seperti AAPL untuk Apple)",
+        "Stiker yang kamu dapatkan saat membeli saham",
+        "Tombol yang mengeluarkan suara berdetak"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Kode saham adalah nama panggilan yang pendek dan mudah diketik untuk perusahaan di pasar saham."
+    },
+    {
+      "question": "Apa itu 'Pasar Bullish' 🐂?",
+      "options": [
+        "Pasar yang menjual banteng",
+        "Waktu ketika sebagian besar harga saham sedang TURUN",
+        "Waktu ketika sebagian besar harga saham sedang NAIK",
+        "Pasar yang sangat lambat"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Pasar bullish adalah ketika pasar sedang kuat dan harga-harga umumnya naik. Bayangkan banteng yang menyeruduk maju!"
+    },
+    {
+      "question": "Dan bagaimana dengan 'Pasar Bearish' 🐻?",
+      "options": [
+        "Pasar tempat kamu bisa membeli boneka beruang",
+        "Waktu ketika sebagian besar harga saham sedang TURUN",
+        "Waktu ketika sebagian besar harga saham sedang NAIK",
+        "Pasar yang sangat cepat"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Pasar bearish adalah ketika pasar sedang lemah dan harga-harga umumnya turun. Bayangkan beruang yang sedang berhibernasi."
+    },
+    {
+      "question": "Apa itu 'dividen'?",
+      "options": [
+        "Soal matematika",
+        "Denda karena kehilangan uang",
+        "Pembayaran bonus kecil dari perusahaan kepada pemegang sahamnya",
+        "Jenis sayuran"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Beberapa perusahaan membagikan keuntungan mereka kepada pemegang saham dengan memberikan dividen, yang seperti hadiah uang tunai kecil karena telah menjadi pemilik."
+    },
+    {
+      "question": "Apa aturan #1 dalam berinvestasi?",
+      "options": [
+        "Hanya beli saham dengan nama keren",
+        "Jangan pernah menjual saham",
+        "Jangan takut rugi, tapi berusahalah untuk belajar!",
+        "Beli apa yang temanmu beli"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Tujuannya adalah untuk belajar bagaimana pasar bekerja. Setiap keputusan, menang atau kalah, adalah kesempatan belajar. Kerja bagus!"
+    }
+  ]
+}
