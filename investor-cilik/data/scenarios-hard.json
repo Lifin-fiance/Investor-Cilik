@@ -1,0 +1,318 @@
+[
+    {
+        "day": 1,
+        "news": {
+            "headline": "Krisis Likuiditas Global Muncul",
+            "prediction": "Sektor defensif mungkin menjadi pelindung saat kepanikan menyebar. Sektor kesehatan bisa berkinerja lebih baik.",
+            "rumor": "Bisik-bisik intervensi bank sentral sudah beredar di lantai bursa"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -12.8 }, { "target": "HEALTH", "change": 3.2 }, { "target": "ENERGY", "change": -15.4 },
+            { "target": "FIN", "change": -22.7 }, { "target": "RETAIL", "change": -18.9 }, { "target": "AUTO", "change": -24.1 }
+        ]
+    },
+    {
+        "day": 2,
+        "news": {
+            "headline": "Klaim Komputasi Kuantum INVT Dipertanyakan",
+            "prediction": "Sektor teknologi bisa pulih jika verifikasi berhasil, tetapi kegagalan bisa memicu keruntuhan di seluruh sektor",
+            "rumor": "Para 'short seller' mengakumulasi posisi menjelang hasil audit pihak ketiga"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 28.5 }, 
+            { "target": "HEALTH", "change": -4.8 }, 
+            { "target": "ENERGY", "change": -9.7 },
+            { "target": "FIN", "change": -12.3 }, 
+            { "target": "RETAIL", "change": -15.2 }, 
+            { "target": "AUTO", "change": -17.6 }
+        ]
+    },
+    {
+        "day": 3,
+        "news": {
+            "headline": "Gelombang Gagal Bayar Utang Menghantam Sektor Keuangan",
+            "prediction": "Risiko penularan ke sektor ritel dan otomotif saat pasar kredit membeku",
+            "rumor": "Dana lindung nilai besar menghadapi 'margin call' atas taruhan di sektor keuangan"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -22.4 }, 
+            { "target": "HEALTH", "change": 8.1 }, 
+            { "target": "ENERGY", "change": -3.8 },
+            { "target": "FIN", "change": -42.9 }, 
+            { "target": "RETAIL", "change": -31.7 }, 
+            { "target": "AUTO", "change": -38.4 }
+        ]
+    },
+    {
+        "day": 4,
+        "news": {
+            "headline": "Paten VITA Dibatalkan - Produk Generik Membanjiri Pasar",
+            "prediction": "Sektor kesehatan mungkin mengalami kerusakan kolateral karena kepercayaan investor hancur",
+            "rumor": "Laporan orang dalam tentang kejanggalan akuntansi di VITA"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 5.7 }, 
+            { "target": "HEALTH", "change": -51.3 }, 
+            { "target": "ENERGY", "change": 2.4 },
+            { "target": "FIN", "change": -8.9 }, 
+            { "target": "RETAIL", "change": -11.2 }, 
+            { "target": "AUTO", "change": -15.8 }
+        ]
+    },
+    {
+        "day": 5,
+        "news": {
+            "headline": "Guncangan Minyak: Konflik Timur Tengah Meningkat",
+            "prediction": "Keuntungan tak terduga sektor energi mungkin diimbangi oleh kehancuran permintaan di sektor konsumen",
+            "rumor": "Pelepasan cadangan strategis sedang dipertimbangkan"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -18.7 }, 
+            { "target": "HEALTH", "change": 4.9 }, 
+            { "target": "ENERGY", "change": 63.5 },
+            { "target": "FIN", "change": -22.8 }, 
+            { "target": "RETAIL", "change": -29.4 }, 
+            { "target": "AUTO", "change": -35.1 }
+        ]
+    },
+    {
+        "day": 6,
+        "news": {
+            "headline": "Rantai Pasokan Sektor Otomotif Runtuh",
+            "prediction": "Efek domino industri diperkirakan - komponen teknologi berikutnya yang akan gagal",
+            "rumor": "Negosiasi dana talangan rahasia sedang berlangsung"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -15.9 }, 
+            { "target": "HEALTH", "change": 3.4 }, 
+            { "target": "ENERGY", "change": -7.8 },
+            { "target": "FIN", "change": -18.3 }, 
+            { "target": "RETAIL", "change": -23.7 }, 
+            { "target": "AUTO", "change": -58.4 }
+        ]
+    },
+    {
+        "day": 7,
+        "news": {
+            "headline": "Kelelehan Perdagangan Algoritmik di Sektor Teknologi",
+            "prediction": "Reaksi berlebihan dari regulator dapat menciptakan gelombang kedua aksi jual",
+            "rumor": "Pembocor rahasia mengklaim 'glitch' tersebut adalah manipulasi pasar yang disengaja"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -47.8 }, 
+            { "target": "HEALTH", "change": 6.2 }, 
+            { "target": "ENERGY", "change": 8.9 },
+            { "target": "FIN", "change": -35.1 }, 
+            { "target": "RETAIL", "change": -26.5 }, 
+            { "target": "AUTO", "change": -29.7 }
+        ]
+    },
+    {
+        "day": 8,
+        "news": {
+            "headline": "Ledakan Real Estat Komersial Mengejutkan Pasar",
+            "prediction": "Skeptisisme tetap ada tentang keberlanjutan reli sektor keuangan",
+            "rumor": "Data menunjukkan gelembung sedang terbentuk di bank-bank regional"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 9.4 }, 
+            { "target": "HEALTH", "change": 7.1 }, 
+            { "target": "ENERGY", "change": -6.2 },
+            { "target": "FIN", "change": 72.8 }, 
+            { "target": "RETAIL", "change": 24.6 }, 
+            { "target": "AUTO", "change": 18.9 }
+        ]
+    },
+    {
+        "day": 9,
+        "news": {
+            "headline": "'Short Squeeze' Menciptakan Reli Artifisial",
+            "prediction": "Sektor-sektor rentan mungkin melihat pembalikan arah yang tajam saat 'squeeze' berakhir",
+            "rumor": "Skema 'pump-and-dump' yang terkoordinasi dicurigai"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 35.7 }, 
+            { "target": "HEALTH", "change": -8.4 }, 
+            { "target": "ENERGY", "change": 15.9 },
+            { "target": "FIN", "change": -11.2 }, 
+            { "target": "RETAIL", "change": 22.8 }, 
+            { "target": "AUTO", "change": 41.3 }
+        ]
+    },
+    {
+        "day": 10,
+        "news": {
+            "headline": "Kiamat Ritel: MMRT Mengajukan Kebangkrutan",
+            "prediction": "Gagal bayar hipotek komersial dapat memicu krisis sektor keuangan",
+            "rumor": "Dana ekuitas swasta mengincar aset-aset bermasalah"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -9.7 }, 
+            { "target": "HEALTH", "change": 6.3 }, 
+            { "target": "ENERGY", "change": -3.1 },
+            { "target": "FIN", "change": -38.2 }, 
+            { "target": "RETAIL", "change": -67.5 }, 
+            { "target": "AUTO", "change": -25.4 }
+        ]
+    },
+    {
+        "day": 11,
+        "news": {
+            "headline": "Kelumpuhan Pasar: Kebuntuan Institusional",
+            "prediction": "'Breakout' segera terjadi - arah bergantung pada data makro semalam",
+            "rumor": "Aktivitas 'dark pool' menunjukkan pembentukan posisi besar-besaran"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 0.3 }, 
+            { "target": "HEALTH", "change": -0.9 }, 
+            { "target": "ENERGY", "change": 0.7 },
+            { "target": "FIN", "change": -0.4 }, 
+            { "target": "RETAIL", "change": 0.1 }, 
+            { "target": "AUTO", "change": -0.6 }
+        ]
+    },
+    {
+        "day": 12,
+        "news": {
+            "headline": "Gugatan 'Class Action' VITA Mendapatkan Momentum",
+            "prediction": "Krisis kredibilitas sektor farmasi bisa merembet ke bioteknologi",
+            "rumor": "Investigasi rahasia FDA terhadap data uji coba"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -4.8 }, 
+            { "target": "HEALTH", "change": -45.9 }, 
+            { "target": "ENERGY", "change": 5.7 },
+            { "target": "FIN", "change": -15.3 }, 
+            { "target": "RETAIL", "change": -11.8 }, 
+            { "target": "AUTO", "change": -8.4 }
+        ]
+    },
+    {
+        "day": 13,
+        "news": {
+            "headline": "Guncangan Suku Bunga: Kenaikan Darurat +200bps",
+            "prediction": "Sektor dengan utang tinggi menghadapi 'margin call' eksistensial",
+            "rumor": "Krisis mata uang menyebar ke pasar negara berkembang"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -31.4 }, 
+            { "target": "HEALTH", "change": 9.8 }, 
+            { "target": "ENERGY", "change": 18.3 },
+            { "target": "FIN", "change": -63.7 }, 
+            { "target": "RETAIL", "change": -48.2 }, 
+            { "target": "AUTO", "change": -57.9 }
+        ]
+    },
+    {
+        "day": 14,
+        "news": {
+            "headline": "Serangan Siber SBNK Mengungkap Kerentanan Sistemik",
+            "prediction": "Tindakan keras regulator dapat mengubah lanskap 'fintech' secara permanen",
+            "rumor": "Serangan yang disponsori negara menargetkan infrastruktur keuangan"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -28.7 }, 
+            { "target": "HEALTH", "change": 2.9 }, 
+            { "target": "ENERGY", "change": -6.4 },
+            { "target": "FIN", "change": -74.3 }, 
+            { "target": "RETAIL", "change": -32.6 }, 
+            { "target": "AUTO", "change": -35.8 }
+        ]
+    },
+    {
+        "day": 15,
+        "news": {
+            "headline": "Para Pemburu Diskon Memicu Kegilaan 'Short Covering'",
+            "prediction": "Potensi 'jebakan bear' - fundamental tetap buruk",
+            "rumor": "Investor kakap mengakumulasi aset-aset bermasalah"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 53.7 }, 
+            { "target": "HEALTH", "change": 34.2 }, 
+            { "target": "ENERGY", "change": 28.9 },
+            { "target": "FIN", "change": 62.4 }, 
+            { "target": "RETAIL", "change": 48.3 }, 
+            { "target": "AUTO", "change": 59.1 }
+        ]
+    },
+    {
+        "day": 16,
+        "news": {
+            "headline": "Peristiwa Angsa Hitam Geopolitik",
+            "prediction": "Arus dana ke aset aman mungkin bertentangan dengan logika sektor tradisional",
+            "rumor": "Penimbunan komoditas sudah berlangsung"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -38.4 }, 
+            { "target": "HEALTH", "change": -22.7 }, 
+            { "target": "ENERGY", "change": 83.5 },
+            { "target": "FIN", "change": -45.9 }, 
+            { "target": "RETAIL", "change": -41.3 }, 
+            { "target": "AUTO", "change": -47.6 }
+        ]
+    },
+    {
+        "day": 17,
+        "news": {
+            "headline": "Rumor Nasionalisasi INVT",
+            "prediction": "Kekhawatiran perampasan aset teknologi dapat memicu pelarian modal asing",
+            "rumor": "Aplikasi militer ditemukan dalam teknologi kuantum"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -68.3 }, 
+            { "target": "HEALTH", "change": 7.5 }, 
+            { "target": "ENERGY", "change": -4.2 },
+            { "target": "FIN", "change": -19.8 }, 
+            { "target": "RETAIL", "change": -26.4 }, 
+            { "target": "AUTO", "change": -31.7 }
+        ]
+    },
+    {
+        "day": 18,
+        "news": {
+            "headline": "Revolusi Rantai Pasokan: Ledakan Penjualan Langsung ke Konsumen",
+            "prediction": "Model ritel tradisional mungkin tidak akan pernah pulih",
+            "rumor": "Startup logistik kripto mengganggu pemain lama"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 74.9 }, 
+            { "target": "HEALTH", "change": 13.8 }, 
+            { "target": "ENERGY", "change": -11.2 },
+            { "target": "FIN", "change": 28.4 }, 
+            { "target": "RETAIL", "change": 89.7 }, 
+            { "target": "AUTO", "change": 17.3 }
+        ]
+    },
+    {
+        "day": 19,
+        "news": {
+            "headline": "'Gamma Squeeze' Bertemu dengan 'Quadruple Witching'",
+            "prediction": "Skenario penderitaan maksimum kemungkinan terjadi saat derivatif berakhir",
+            "rumor": "'Market maker' terekspos secara berbahaya di berbagai sektor"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": -51.8 }, 
+            { "target": "HEALTH", "change": 37.4 }, 
+            { "target": "ENERGY", "change": -29.7 },
+            { "target": "FIN", "change": 68.2 }, 
+            { "target": "RETAIL", "change": -52.9 }, 
+            { "target": "AUTO", "change": 63.5 }
+        ]
+    },
+    {
+        "day": 20,
+        "news": {
+            "headline": "Peristiwa Lubang Hitam Likuiditas",
+            "prediction": "Selamat telah bertahan dari simulasi pasar yang paling brutal!",
+            "rumor": "Sistem algoritmik mendeteksi pola kapitulasi panik"
+        },
+        "fluctuation": [
+            { "target": "TECH", "change": 97.3 }, 
+            { "target": "HEALTH", "change": -74.2 }, 
+            { "target": "ENERGY", "change": 62.8 },
+            { "target": "FIN", "change": -53.7 }, 
+            { "target": "RETAIL", "change": 88.4 }, 
+            { "target": "AUTO", "change": -67.9 }
+        ]
+    }
+]

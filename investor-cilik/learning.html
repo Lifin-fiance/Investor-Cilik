@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Center - StockQuest Jr.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-blue-50 flex flex-col min-h-screen">
+
+    <!-- Kontainer untuk Navbar yang akan diisi oleh JavaScript -->
+    <div id="navbar-container"></div>
+
+    <main class="flex-grow mt-8">
+        <div class="container mx-auto px-4 py-8">
+            <header class="text-center mb-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800" style="font-family: 'Baloo 2', cursive;">Learning Center</h1>
+                <p class="text-xl text-gray-600 mt-2">Your journey to becoming a trading expert starts here!</p>
+            </header>
+            <div class="mb-8">
+                <div class="border-b border-gray-300">
+                    <nav class="-mb-px flex justify-center space-x-6" aria-label="Tabs">
+                        <button id="lessons-tab" class="tab-btn active-tab">
+                            <i class="fas fa-rocket mr-2"></i>Lessons
+                        </button>
+                        <button id="glossary-tab" class="tab-btn">
+                            <i class="fas fa-book mr-2"></i>Glossary
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <div id="lessons-panel" class="tab-panel">
+                    <div id="lessons-container" class="space-y-6">
+                        <p class="text-center text-gray-500">Loading lessons...</p>
+                    </div>
+                </div>
+
+                <div id="glossary-panel" class="tab-panel" style="display: none;">
+                    <div id="glossary-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                         <p class="text-center text-gray-500">Loading glossary...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="chatbot-container"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/learning.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

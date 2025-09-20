@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prologue Home - Investor Cilik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tone.js untuk efek suara -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    <style>
+        /* Import font Baloo 2 */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap');
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Mencegah scrolling */
+        }
+
+        body {
+            font-family: 'Baloo 2', sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- ANIMASI UMUM --- */
+        @keyframes initial-scale {
+            from { transform: scale(0) rotate(-15deg); opacity: 0; }
+            to { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        @keyframes pulse-wild {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.1) rotate(-3deg); }
+            75% { transform: scale(1.1) rotate(3deg); }
+        }
+        
+        /* Animasi gelembung percakapan yang lebih 'bouncy' */
+        @keyframes bubble-wobble-in {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+            60% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+            80% { transform: translate(-50%, -50%) scale(0.9); }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        @keyframes peek-up {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0%); opacity: 1; }
+        }
+        
+        @keyframes button-appear {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-logo-entry { animation: initial-scale 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .animate-logo-pulse { animation: pulse-wild 0.8s infinite; }
+        .animate-bubble-pop { animation: bubble-wobble-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .animate-mascot-peek { animation: peek-up 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .animate-button-appear { animation: button-appear 0.5s ease-out 0.5s forwards; }
+        .animate-fade-in-up { animation: fade-in-up 0.5s ease-out forwards; }
+
+        /* --- STYLE BARU UNTUK BUBBLE CHAT --- */
+        #speechBubble {
+            background: linear-gradient(135deg, #04b3e3, #039dbb);
+            color: white;
+            position: relative; /* Diperlukan untuk 'ekor' */
+        }
+
+        /* Ekor untuk bubble chat menggunakan pseudo-element */
+        #speechBubble::after {
+            content: '';
+            position: absolute;
+            bottom: -15px; /* Posisi ekor di bawah bubble */
+            left: 30px; /* Posisi horizontal ekor */
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #039dbb; /* Warna harus cocok dengan gradien bawah */
+            border-bottom: 0;
+            border-left: 0;
+        }
+
+        /* Efek kursor untuk teks ketik */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        /* --- STYLE UNTUK TUTORIAL SAHAM --- */
+        #tutorialContainer {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .tutorial-card {
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease;
+        }
+        .tutorial-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="relative">
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full h-[90px] bg-white flex items-center justify-between px-6 lg:px-20 z-50" style="box-shadow: 0 3px 0px 0 rgba(4,179,227,0.2);">
+        <div class="flex items-center">
+            <img src="assets/images/icon.png" class="w-[90px] object-cover cursor-pointer" alt="logolifin" onclick="window.location.href='index.html'">
+        </div>
+        <button 
+            onclick="goBackOrHome()" 
+            class="bg-[#FF6B6B] text-white text-lg font-extrabold px-5 py-2 rounded-full font-['Baloo_2'] hover:opacity-90 transition-all duration-200" 
+            style="box-shadow: 0 5px 0px 0 #d44f4f;">
+            Back
+        </button>
+    </header>
+
+    <!-- Konten Utama: Logo yang dianimasikan -->
+    <main id="mainContent" class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <img id="logo" src="assets/images/investor-cilik-logo.svg" alt="Investor Cilik Logo" class="w-full max-w-sm md:max-w-md cursor-pointer animate-logo-entry">
+    </main>
+    
+    <!-- Gelembung Percakapan -->
+    <div id="speechBubble" class="hidden fixed top-1/2 left-1/2 w-4/5 max-w-md p-6 rounded-2xl shadow-xl z-20">
+        <p id="speechText" class="text-center font-semibold text-lg min-h-[72px]"></p>
+    </div>
+
+    <!-- Bar Bawah dan Maskot -->
+    <div id="bottomBar" class="fixed bottom-0 left-0 right-0 h-[100px] bg-[#04b3e3] flex items-center justify-end px-6 md:px-10">
+        <div id="mascotContainer" class="absolute bottom-[30px] left-[-40px] w-[200px] md:left-[-20px] md:w-[400px] lg:left-[-0px] lg:w-[400px] z-10 opacity-0">
+            <img 
+                src="assets/images/mascotfin.png" 
+                alt="Mascot" 
+                class="h-full w-full object-contain"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x400/ffffff/e0e0e0?text=Mascot';"
+            >
+        </div>
+        <button id="continueButton" class="hidden bg-white text-[#04b3e3] font-bold text-lg py-3 px-10 rounded-full transition-transform duration-200 active:scale-95" style="font-weight: 700;">
+            Lanjut
+        </button>
+    </div>
+
+    <!-- --- BAGIAN BARU: TUTORIAL SAHAM INTERAKTIF --- -->
+    <div id="tutorialContainer" class="hidden absolute inset-0 bg-white/80 backdrop-blur-sm z-30 flex flex-col items-center justify-center p-4">
+        <div id="tutorialCard" class="tutorial-card bg-white w-full max-w-2xl p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6">
+            <img id="tutorialImage" src="https://placehold.co/200x200/04b3e3/FFFFFF?text=Gambar" class="w-32 h-32 md:w-48 md:h-48 rounded-lg object-cover">
+            <div class="text-center md:text-left">
+                <h2 id="tutorialTitle" class="text-2xl md:text-3xl font-extrabold text-[#04b3e3] mb-2"></h2>
+                <p id="tutorialText" class="text-gray-700"></p>
+            </div>
+        </div>
+        <button id="tutorialNextButton" class="mt-8 bg-[#FF6B6B] text-white text-xl font-extrabold px-8 py-3 rounded-full hover:opacity-90 transition-all duration-200 active:scale-95" style="box-shadow: 0 5px 0px 0 #d44f4f;">
+            Mengerti!
+        </button>
+    </div>
+
+    <script>
+        // --- Elemen DOM ---
+        const logo = document.getElementById('logo');
+        const mainContent = document.getElementById('mainContent');
+        const speechBubble = document.getElementById('speechBubble');
+        const speechText = document.getElementById('speechText');
+        const continueButton = document.getElementById('continueButton');
+        const mascotContainer = document.getElementById('mascotContainer');
+        const bottomBar = document.getElementById('bottomBar');
+        
+        // --- Elemen Tutorial ---
+        const tutorialContainer = document.getElementById('tutorialContainer');
+        const tutorialCard = document.getElementById('tutorialCard');
+        const tutorialImage = document.getElementById('tutorialImage');
+        const tutorialTitle = document.getElementById('tutorialTitle');
+        const tutorialText = document.getElementById('tutorialText');
+        const tutorialNextButton = document.getElementById('tutorialNextButton');
+
+        let isLogoClicked = false;
+        let currentStep = 0;
+        let tutorialCurrentStep = 0;
+
+        // --- Efek Suara ---
+        const synth = new Tone.Synth().toDestination();
+        function playSound(note) {
+            Tone.start(); // Diperlukan untuk browser yang memblokir audio
+            synth.triggerAttackRelease(note, "8n");
+        }
+
+        // --- Konten Percakapan & Tutorial ---
+        const conversation = [
+            "Halo! Aku Lifin, instruktur investasimu. Aku akan memandumu menjadi pahlawan finansial. Siap?",
+            "Kita akan belajar tentang saham, cara kerjanya, dan bagaimana cara berinvestasi dengan cerdas!",
+            "Jangan khawatir, ini akan menjadi petualangan yang seru dan mudah dimengerti. Ayo kita mulai!"
+        ];
+
+        const tutorialSteps = [
+            {
+                title: "Apa itu Saham?",
+                text: "Bayangkan kamu punya sepotong kecil dari perusahaan besar seperti pembuat mainan atau es krim. Itulah saham! Kamu jadi ikut memiliki perusahaannya.",
+                image: "https://placehold.co/200x200/3498db/FFFFFF?text=Perusahaan"
+            },
+            {
+                title: "Membeli Saham",
+                text: "Saat kamu membeli saham, kamu memberikan uangmu agar perusahaan bisa berkembang. Sebagai imbalannya, kamu mendapatkan bagian dari perusahaan itu.",
+                image: "https://placehold.co/200x200/2ecc71/FFFFFF?text=Beli"
+            },
+            {
+                title: "Nilai Saham Naik!",
+                text: "Jika perusahaannya sukses dan menghasilkan banyak uang, nilai saham milikmu akan ikut naik! Keren, kan?",
+                image: "https://placehold.co/200x200/f1c40f/FFFFFF?text=Naik"
+            },
+            {
+                title: "Risiko Saham Turun",
+                text: "Tapi, jika perusahaan tidak berjalan baik, nilai sahammu bisa turun. Inilah pentingnya memilih perusahaan yang bagus dan kuat.",
+                image: "https://placehold.co/200x200/e74c3c/FFFFFF?text=Turun"
+            },
+            {
+                title: "Siap Bermain?",
+                text: "Sekarang kamu sudah tahu dasarnya. Di game nanti, kita akan berlatih membeli dan menjual saham. Ayo kita mulai petualangannya!",
+                image: "https://placehold.co/200x200/9b59b6/FFFFFF?text=Mulai"
+            }
+        ];
+
+        // --- Fungsi-fungsi ---
+        function goBackOrHome() {
+            if (window.history.length > 1) {
+                history.back();
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+        function typewriter(element, text, callback) {
+            let i = 0;
+            element.innerHTML = "";
+            element.classList.add('typing-cursor');
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval);
+                    element.classList.remove('typing-cursor');
+                    if (callback) callback();
+                }
+            }, 50); // Kecepatan mengetik
+        }
+
+        function showTutorialStep(index) {
+            const step = tutorialSteps[index];
+            tutorialCard.classList.remove('animate-fade-in-up');
+            // Sedikit trik untuk memicu ulang animasi
+            void tutorialCard.offsetWidth; 
+            tutorialCard.classList.add('animate-fade-in-up');
+
+            tutorialTitle.innerText = step.title;
+            tutorialText.innerText = step.text;
+            tutorialImage.src = step.image;
+            playSound("C4");
+
+            if (index === tutorialSteps.length - 1) {
+                tutorialNextButton.innerText = 'Mulai Bermain!';
+            } else {
+                tutorialNextButton.innerText = 'Mengerti!';
+            }
+        }
+
+        // --- Event Listeners ---
+        logo.addEventListener('animationend', (event) => {
+            if (event.animationName === 'initial-scale') {
+                logo.classList.remove('animate-logo-entry');
+                logo.classList.add('animate-logo-pulse');
+            }
+        });
+
+        logo.addEventListener('click', () => {
+            if (isLogoClicked) return;
+            isLogoClicked = true;
+            playSound("E4");
+
+            logo.classList.add('hidden');
+            
+            speechBubble.classList.remove('hidden');
+            speechBubble.classList.add('animate-bubble-pop');
+            typewriter(speechText, conversation[currentStep]);
+
+            mascotContainer.classList.remove('opacity-0');
+            mascotContainer.classList.add('animate-mascot-peek');
+            
+            continueButton.classList.remove('hidden');
+            continueButton.classList.add('animate-button-appear');
+        });
+
+        continueButton.addEventListener('click', () => {
+            playSound("G4");
+            currentStep++;
+            if (currentStep < conversation.length) {
+                typewriter(speechText, conversation[currentStep]);
+                if (currentStep === conversation.length - 1) {
+                    continueButton.innerText = 'Mulai!';
+                }
+            } else {
+                // Sembunyikan elemen intro dan tampilkan tutorial
+                mainContent.classList.add('hidden');
+                speechBubble.classList.add('hidden');
+                bottomBar.classList.add('hidden');
+                tutorialContainer.classList.remove('hidden');
+                showTutorialStep(tutorialCurrentStep);
+            }
+        });
+
+        tutorialNextButton.addEventListener('click', () => {
+            tutorialCurrentStep++;
+            if (tutorialCurrentStep < tutorialSteps.length) {
+                showTutorialStep(tutorialCurrentStep);
+            } else {
+                playSound("C5");
+                // Arahkan ke halaman game setelah tutorial selesai
+                window.location.href = 'game.html'; 
+            }
+        });
+    </script>
+
+</body>
+</html>
